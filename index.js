@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
 });
 
 //Index route
-app.get("/chats", async (req, res) => {
+app.get("/chats", async (req, res, next) => {
     try{
         const chats = await Chat.find();
         // console.log(chats);
