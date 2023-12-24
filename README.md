@@ -47,11 +47,11 @@ This project is a simple implementation of a WhatsApp-like website. The applicat
     npm install
     ```
 
-4.  Setup Mongo Atlas: 
-    Create an account on (MongoDB Atlas)[https://www.mongodb.com/cloud/atlas/register] and create a new `clustor`.
+4.  Setup Mongo Atlas:   
+    Create an account on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and create a new `clustor`.
 
    
-5.Configure Database: 
+5.Configure Database:   
    Create a ```.env``` file in the project directory and add the Database credentials in a key-value pair
 
 6. Start the server:
