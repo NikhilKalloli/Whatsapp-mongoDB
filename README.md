@@ -51,8 +51,8 @@ This project is a simple implementation of a WhatsApp-like website. The applicat
     Create an account on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and create a new `clustor`.  
 
      
-   5.Configure Database:   
-      Create a ```.env``` file in the project directory and add the Database credentials in a key-value pair
+5. Configure Database:   
+   Create a ```.env``` file in the project directory and add the Database credentials in a key-value pair
 
 6. Start the server:
     ```
