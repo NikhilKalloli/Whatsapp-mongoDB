@@ -13,13 +13,13 @@ const Chat = require("./models/chat.js");
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname + "/public")));
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true })); 
 app.use(methodOverride("_method"));
 
 const PORT = 3000;
 
-const dbUrl = process.env.ATLAS_DB_URL;
-
+const dbUrl = 'mongodb://mongodb:27017/fakewhatsapp';
+// const dbUrl = process.env.MONGODB_URL || 'mongodb://mongodb:27017/fakewhatsapp';
 
 main()
     .then(() => console.log('Connected to Mongo DB.'))
@@ -27,7 +27,6 @@ main()
 
 async function main() {
     await mongoose.connect(dbUrl);
-    // await mongoose.connect('mongodb://127.0.0.1:27017/fakewhatsapp');
 }
 
 
